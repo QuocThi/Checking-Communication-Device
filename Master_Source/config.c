@@ -26,7 +26,7 @@ void UART_Initt()
 	GPIO_Init(GPIOA,&GPIO_UART_Init);
 	
 	/****************************** UART Initialization (Get from stm32f10x_usart.c)********************/
-	UART2_Init.USART_BaudRate = 9600;
+	UART2_Init.USART_BaudRate = 115200;
   UART2_Init.USART_WordLength = USART_WordLength_8b;
   UART2_Init.USART_StopBits = USART_StopBits_1;
   UART2_Init.USART_Parity = USART_Parity_No ;
@@ -42,9 +42,12 @@ void UART_Send_String(char *data)
 	int i=0;
 	while(data[i] != '\0')
 	{
+			USART2->DR = (data[i] & (uint16_t)0x01FF);
+			//USART_SendData(USART2,data[i]);
 		while(USART_GetITStatus(USART2,USART_IT_TC) != RESET){;}
-			USART_SendData(USART2,data[i]);
 			i++;
+			/****************************** Delay for transmit *************************************/
+			DelayMs(2);										
 	}
 }
 

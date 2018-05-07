@@ -1,6 +1,6 @@
 #include "config.h"
 
-char Data = 'A';
+char *Data = "Hellou";
 
 int main()
 {
@@ -12,7 +12,7 @@ int main()
 	DelayMs(1000);
 	UART_Initt();
 	NVIC_Initt();
-	USART_SendData(USART2,Data);
+	UART_Send_String(Data);
 	while(1)
 	{
 	}
