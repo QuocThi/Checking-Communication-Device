@@ -86,7 +86,7 @@ void UART_Initt(uint16_t baud)
   UART2_Init.USART_HardwareFlowControl = USART_HardwareFlowControl_None;  
 	USART_Init(USART2,&UART2_Init);
 	USART_ITConfig(USART2,USART_IT_RXNE,ENABLE);
-	USART_Cmd(USART2,ENABLE);
+	USART_Cmd(USART2,DISABLE);						// Enable when button interrupt UART press
 }
 
 void UART_Send_String(char *data)
@@ -103,15 +103,48 @@ void UART_Send_String(char *data)
 	}
 }
 
-void NVIC_Initt()
+void NVIC_Initt_UART()
 {
 	NVIC_InitTypeDef	NVIC_UART2_Init;
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_0);
 	NVIC_UART2_Init.NVIC_IRQChannel = USART2_IRQn;
 	NVIC_UART2_Init.NVIC_IRQChannelPreemptionPriority =  0;
-	NVIC_UART2_Init.NVIC_IRQChannelSubPriority = 10;
+	NVIC_UART2_Init.NVIC_IRQChannelSubPriority = 1;
 	NVIC_UART2_Init.NVIC_IRQChannelCmd = ENABLE;
 	NVIC_Init(&NVIC_UART2_Init);
+}
+
+/************************************************
+	@brief Config External interrupt
+*************************************************/
+
+void Sel_Mode_UART()
+{
+	GPIO_InitTypeDef GPIO_Button_Init;
+	EXTI_InitTypeDef Ext_Init;
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB,ENABLE);
+	
+	GPIO_Button_Init.GPIO_Mode = GPIO_Mode_IPD;								// IPD: Input Pull Down
+	GPIO_Button_Init.GPIO_Pin = GPIO_Pin_8;
+	GPIO_Button_Init.GPIO_Speed = GPIO_Speed_50MHz;
+	GPIO_Init(GPIOB,&GPIO_Button_Init);
+	
+	Ext_Init.EXTI_Line = EXTI_Line9;
+	Ext_Init.EXTI_Mode = EXTI_Mode_Interrupt;
+	Ext_Init.EXTI_Trigger = EXTI_Trigger_Falling;
+	Ext_Init.EXTI_LineCmd = ENABLE;
+	
+}
+
+void NVIC_Mode_Enable_UART()
+{
+	NVIC_InitTypeDef	NVIC_EXTI_Init;
+	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_0);
+	NVIC_EXTI_Init.NVIC_IRQChannel = EXTI9_5_IRQn;
+	NVIC_EXTI_Init.NVIC_IRQChannelPreemptionPriority =  0;
+	NVIC_EXTI_Init.NVIC_IRQChannelSubPriority = 2;
+	NVIC_EXTI_Init.NVIC_IRQChannelCmd = ENABLE;
+	NVIC_Init(&NVIC_EXTI_Init);
 }
 
 

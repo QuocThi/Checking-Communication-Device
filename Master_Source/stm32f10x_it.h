@@ -29,11 +29,15 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x.h"
 #include "var.h"
+#include "config.h"
+
 /* Exported types ------------------------------------------------------------*/
 /* Exported constants --------------------------------------------------------*/
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions ------------------------------------------------------- */
 
+volatile uint8_t Mode = -1;
+	 
 void NMI_Handler(void);
 void HardFault_Handler(void);
 void MemManage_Handler(void);

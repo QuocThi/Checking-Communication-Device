@@ -19,3 +19,5 @@
 .\objects\main.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
 .\objects\main.o: delay.h
 .\objects\main.o: config.h
+.\objects\main.o: stm32f10x_it.h
+.\objects\main.o: var.h

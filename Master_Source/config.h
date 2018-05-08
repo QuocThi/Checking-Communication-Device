@@ -10,8 +10,7 @@
 #include 	"stm32f10x_usart.h"
 #include 	"misc.h"
 #include  "delay.h"
-
-//volatile char Mode;
+#include 	"stm32f10x_it.h"
 
 #define sbi(PORT,PIN)		PORT |= (1<<PIN)
 #define cbi(PORT,PIN)		PORT &= ~(1<<PIN)
@@ -36,9 +35,10 @@ void I2C_Initt();
 void SPI_Initt();
 void TIM_Initt();
 void UART_Initt(uint16_t baud);
-void NVIC_Initt();
-void UART_Send_String(char* data);
-void External_Interrupt_Init();
+void NVIC_Initt_UART();
+void NVIC_Mode_Enable_UART();					// Enable interrupt button for UART
+void UART_Send_String(char* data);		
+void Sel_Mode_UART();									// Configure button for UART
 
 
 #endif

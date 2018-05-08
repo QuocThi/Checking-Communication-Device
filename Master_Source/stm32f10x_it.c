@@ -378,7 +378,14 @@ void CAN_SCE_IRQHandler(void)
 * Return         : None
 *******************************************************************************/
 void EXTI9_5_IRQHandler(void)
-{}
+{
+	if(EXTI_GetFlagStatus(EXTI_Line9) != RESET)
+	{
+		USART_Cmd(USART2,DISABLE);
+		Mode = 1;
+		EXTI_ClearITPendingBit(EXTI_Line9);
+	}
+}
 
 /*******************************************************************************
 * Function Name  : TIM1_BRK_IRQHandler

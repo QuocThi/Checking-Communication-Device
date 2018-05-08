@@ -32,94 +32,125 @@ compiling main.c...
   /******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/
 delay.h(19): warning:  #1-D: last line of file ends without a newline
   #endif
-config.h(32): warning:  #1295-D: Deprecated declaration Clock_reConfig - give arg types
+stm32f10x_it.h(39): warning:  #68-D: integer conversion resulted in a change of sign
+  volatile uint8_t Mode = -1;
+config.h(31): warning:  #1295-D: Deprecated declaration Clock_reConfig - give arg types
   void Clock_reConfig();
-config.h(33): warning:  #1295-D: Deprecated declaration GPIO_Initt - give arg types
+config.h(32): warning:  #1295-D: Deprecated declaration GPIO_Initt - give arg types
   void GPIO_Initt();
-config.h(34): warning:  #1295-D: Deprecated declaration Interrupt_Initt - give arg types
+config.h(33): warning:  #1295-D: Deprecated declaration Interrupt_Initt - give arg types
   void Interrupt_Initt();
-config.h(35): warning:  #1295-D: Deprecated declaration I2C_Initt - give arg types
+config.h(34): warning:  #1295-D: Deprecated declaration I2C_Initt - give arg types
   void I2C_Initt();
-config.h(36): warning:  #1295-D: Deprecated declaration SPI_Initt - give arg types
+config.h(35): warning:  #1295-D: Deprecated declaration SPI_Initt - give arg types
   void SPI_Initt();
-config.h(37): warning:  #1295-D: Deprecated declaration TIM_Initt - give arg types
+config.h(36): warning:  #1295-D: Deprecated declaration TIM_Initt - give arg types
   void TIM_Initt();
-config.h(39): warning:  #1295-D: Deprecated declaration NVIC_Initt - give arg types
-  void NVIC_Initt();
-main.c(20): warning:  #111-D: statement is unreachable
+config.h(38): warning:  #1295-D: Deprecated declaration NVIC_Initt_UART - give arg types
+  void NVIC_Initt_UART();
+config.h(39): warning:  #1295-D: Deprecated declaration NVIC_Mode_Enable_UART - give arg types
+  void NVIC_Mode_Enable_UART();					// Enable interrupt button for UART
+config.h(41): warning:  #1295-D: Deprecated declaration Sel_Mode_UART - give arg types
+  void Sel_Mode_UART();									// Configure button for UART
+main.c(23): warning:  #111-D: statement is unreachable
   	return 0;
-main.c(21): warning:  #1-D: last line of file ends without a newline
+main.c(24): warning:  #1-D: last line of file ends without a newline
   }
-main.c: 11 warnings, 0 errors
-compiling config.c...
-..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h(124): warning:  #1-D: last line of file ends without a newline
-  /******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/
-delay.h(19): warning:  #1-D: last line of file ends without a newline
-  #endif
-config.h(32): warning:  #1295-D: Deprecated declaration Clock_reConfig - give arg types
-  void Clock_reConfig();
-config.h(33): warning:  #1295-D: Deprecated declaration GPIO_Initt - give arg types
-  void GPIO_Initt();
-config.h(34): warning:  #1295-D: Deprecated declaration Interrupt_Initt - give arg types
-  void Interrupt_Initt();
-config.h(35): warning:  #1295-D: Deprecated declaration I2C_Initt - give arg types
-  void I2C_Initt();
-config.h(36): warning:  #1295-D: Deprecated declaration SPI_Initt - give arg types
-  void SPI_Initt();
-config.h(37): warning:  #1295-D: Deprecated declaration TIM_Initt - give arg types
-  void TIM_Initt();
-config.h(39): warning:  #1295-D: Deprecated declaration NVIC_Initt - give arg types
-  void NVIC_Initt();
-config.c: 9 warnings, 0 errors
+main.c: 14 warnings, 0 errors
 compiling delay.c...
 ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h(124): warning:  #1-D: last line of file ends without a newline
   /******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/
 delay.h(19): warning:  #1-D: last line of file ends without a newline
   #endif
-config.h(32): warning:  #1295-D: Deprecated declaration Clock_reConfig - give arg types
+stm32f10x_it.h(39): warning:  #68-D: integer conversion resulted in a change of sign
+  volatile uint8_t Mode = -1;
+config.h(31): warning:  #1295-D: Deprecated declaration Clock_reConfig - give arg types
   void Clock_reConfig();
-config.h(33): warning:  #1295-D: Deprecated declaration GPIO_Initt - give arg types
+config.h(32): warning:  #1295-D: Deprecated declaration GPIO_Initt - give arg types
   void GPIO_Initt();
-config.h(34): warning:  #1295-D: Deprecated declaration Interrupt_Initt - give arg types
+config.h(33): warning:  #1295-D: Deprecated declaration Interrupt_Initt - give arg types
   void Interrupt_Initt();
-config.h(35): warning:  #1295-D: Deprecated declaration I2C_Initt - give arg types
+config.h(34): warning:  #1295-D: Deprecated declaration I2C_Initt - give arg types
   void I2C_Initt();
-config.h(36): warning:  #1295-D: Deprecated declaration SPI_Initt - give arg types
+config.h(35): warning:  #1295-D: Deprecated declaration SPI_Initt - give arg types
   void SPI_Initt();
-config.h(37): warning:  #1295-D: Deprecated declaration TIM_Initt - give arg types
+config.h(36): warning:  #1295-D: Deprecated declaration TIM_Initt - give arg types
   void TIM_Initt();
-config.h(39): warning:  #1295-D: Deprecated declaration NVIC_Initt - give arg types
-  void NVIC_Initt();
+config.h(38): warning:  #1295-D: Deprecated declaration NVIC_Initt_UART - give arg types
+  void NVIC_Initt_UART();
+config.h(39): warning:  #1295-D: Deprecated declaration NVIC_Mode_Enable_UART - give arg types
+  void NVIC_Mode_Enable_UART();					// Enable interrupt button for UART
+config.h(41): warning:  #1295-D: Deprecated declaration Sel_Mode_UART - give arg types
+  void Sel_Mode_UART();									// Configure button for UART
 delay.h(19): warning:  #1-D: last line of file ends without a newline
   #endif
 delay.c(15): warning:  #1-D: last line of file ends without a newline
   }
-delay.c: 11 warnings, 0 errors
+delay.c: 14 warnings, 0 errors
+compiling config.c...
+..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h(124): warning:  #1-D: last line of file ends without a newline
+  /******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/
+delay.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+stm32f10x_it.h(39): warning:  #68-D: integer conversion resulted in a change of sign
+  volatile uint8_t Mode = -1;
+config.h(31): warning:  #1295-D: Deprecated declaration Clock_reConfig - give arg types
+  void Clock_reConfig();
+config.h(32): warning:  #1295-D: Deprecated declaration GPIO_Initt - give arg types
+  void GPIO_Initt();
+config.h(33): warning:  #1295-D: Deprecated declaration Interrupt_Initt - give arg types
+  void Interrupt_Initt();
+config.h(34): warning:  #1295-D: Deprecated declaration I2C_Initt - give arg types
+  void I2C_Initt();
+config.h(35): warning:  #1295-D: Deprecated declaration SPI_Initt - give arg types
+  void SPI_Initt();
+config.h(36): warning:  #1295-D: Deprecated declaration TIM_Initt - give arg types
+  void TIM_Initt();
+config.h(38): warning:  #1295-D: Deprecated declaration NVIC_Initt_UART - give arg types
+  void NVIC_Initt_UART();
+config.h(39): warning:  #1295-D: Deprecated declaration NVIC_Mode_Enable_UART - give arg types
+  void NVIC_Mode_Enable_UART();					// Enable interrupt button for UART
+config.h(41): warning:  #1295-D: Deprecated declaration Sel_Mode_UART - give arg types
+  void Sel_Mode_UART();									// Configure button for UART
+config.c(124): warning:  #550-D: variable "Ext_Init"  was set but never used
+  	EXTI_InitTypeDef Ext_Init;
+config.c: 13 warnings, 0 errors
 compiling stm32f10x_it.c...
 ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h(124): warning:  #1-D: last line of file ends without a newline
   /******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/
 delay.h(19): warning:  #1-D: last line of file ends without a newline
   #endif
-config.h(32): warning:  #1295-D: Deprecated declaration Clock_reConfig - give arg types
+config.h(31): warning:  #1295-D: Deprecated declaration Clock_reConfig - give arg types
   void Clock_reConfig();
-config.h(33): warning:  #1295-D: Deprecated declaration GPIO_Initt - give arg types
+config.h(32): warning:  #1295-D: Deprecated declaration GPIO_Initt - give arg types
   void GPIO_Initt();
-config.h(34): warning:  #1295-D: Deprecated declaration Interrupt_Initt - give arg types
+config.h(33): warning:  #1295-D: Deprecated declaration Interrupt_Initt - give arg types
   void Interrupt_Initt();
-config.h(35): warning:  #1295-D: Deprecated declaration I2C_Initt - give arg types
+config.h(34): warning:  #1295-D: Deprecated declaration I2C_Initt - give arg types
   void I2C_Initt();
-config.h(36): warning:  #1295-D: Deprecated declaration SPI_Initt - give arg types
+config.h(35): warning:  #1295-D: Deprecated declaration SPI_Initt - give arg types
   void SPI_Initt();
-config.h(37): warning:  #1295-D: Deprecated declaration TIM_Initt - give arg types
+config.h(36): warning:  #1295-D: Deprecated declaration TIM_Initt - give arg types
   void TIM_Initt();
-config.h(39): warning:  #1295-D: Deprecated declaration NVIC_Initt - give arg types
-  void NVIC_Initt();
-stm32f10x_it.c(559): warning:  #550-D: variable "receivedChar"  was set but never used
+config.h(38): warning:  #1295-D: Deprecated declaration NVIC_Initt_UART - give arg types
+  void NVIC_Initt_UART();
+config.h(39): warning:  #1295-D: Deprecated declaration NVIC_Mode_Enable_UART - give arg types
+  void NVIC_Mode_Enable_UART();					// Enable interrupt button for UART
+config.h(41): warning:  #1295-D: Deprecated declaration Sel_Mode_UART - give arg types
+  void Sel_Mode_UART();									// Configure button for UART
+stm32f10x_it.h(39): warning:  #68-D: integer conversion resulted in a change of sign
+  volatile uint8_t Mode = -1;
+stm32f10x_it.c(566): warning:  #550-D: variable "receivedChar"  was set but never used
   	uint8_t receivedChar;  
-stm32f10x_it.c: 10 warnings, 0 errors
+stm32f10x_it.c: 13 warnings, 0 errors
 linking...
-Program Size: Code=2496 RO-data=268 RW-data=52 ZI-data=1636  
-".\Objects\Source.axf" - 0 Error(s), 41 Warning(s).
+.\Objects\Source.axf: Error: L6200E: Symbol Mode multiply defined (by config.o and main.o).
+.\Objects\Source.axf: Error: L6200E: Symbol Mode multiply defined (by delay.o and main.o).
+.\Objects\Source.axf: Error: L6200E: Symbol Mode multiply defined (by stm32f10x_it.o and main.o).
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning and 3 error messages.
+".\Objects\Source.axf" - 3 Error(s), 54 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -144,13 +175,14 @@ Package Vendor: Keil
 <h2>Collection of Component Files used:</h2>
 
    * Component: Keil::Device:Startup:1.0.0
-      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
-      Include file:  RTE_Driver\Config\RTE_Device.h
-      Source file:   Device\Source\ARM\startup_stm32f10x_md.s
       Source file:   Device\Source\system_stm32f10x.c
+      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
+      Source file:   Device\Source\ARM\startup_stm32f10x_md.s
+      Include file:  RTE_Driver\Config\RTE_Device.h
 
    * Component: ARM::CMSIS:CORE:5.0.2
-Build Time Elapsed:  00:00:02
+Target not created.
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

@@ -21,3 +21,4 @@
 .\objects\stm32f10x_it.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
 .\objects\stm32f10x_it.o: delay.h
 .\objects\stm32f10x_it.o: config.h
+.\objects\stm32f10x_it.o: stm32f10x_it.h
