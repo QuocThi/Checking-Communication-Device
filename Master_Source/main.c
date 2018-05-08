@@ -10,9 +10,10 @@ int main()
 	DelayMs(1000);
 	GPIO_SetBits(GPIOC,GPIO_Pin_13);
 	DelayMs(1000);
-	UART_Initt();
+	UART_Initt(9600);
 	NVIC_Initt();
-	UART_Send_String(Data);
+	//USART_SendData(USART2,'A');
+	//UART_Send_String(Data);
 	while(1)
 	{
 	}

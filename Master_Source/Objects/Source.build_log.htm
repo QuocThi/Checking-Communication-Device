@@ -22,38 +22,104 @@ Dialog DLL:      TARMSTM.DLL V1.66.0.0
  
 <h2>Project:</h2>
 E:\Offline_Project\Checking_Communication_Device\Checking-Communication-Device\Master_Source\Source.uvprojx
-Project File Date:  05/07/2018
+Project File Date:  05/08/2018
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\KeilC ARM\ARM\ARMCC\Bin'
 Build target 'Target 1'
+compiling main.c...
+..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h(124): warning:  #1-D: last line of file ends without a newline
+  /******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/
+delay.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+config.h(32): warning:  #1295-D: Deprecated declaration Clock_reConfig - give arg types
+  void Clock_reConfig();
+config.h(33): warning:  #1295-D: Deprecated declaration GPIO_Initt - give arg types
+  void GPIO_Initt();
+config.h(34): warning:  #1295-D: Deprecated declaration Interrupt_Initt - give arg types
+  void Interrupt_Initt();
+config.h(35): warning:  #1295-D: Deprecated declaration I2C_Initt - give arg types
+  void I2C_Initt();
+config.h(36): warning:  #1295-D: Deprecated declaration SPI_Initt - give arg types
+  void SPI_Initt();
+config.h(37): warning:  #1295-D: Deprecated declaration TIM_Initt - give arg types
+  void TIM_Initt();
+config.h(39): warning:  #1295-D: Deprecated declaration NVIC_Initt - give arg types
+  void NVIC_Initt();
+main.c(20): warning:  #111-D: statement is unreachable
+  	return 0;
+main.c(21): warning:  #1-D: last line of file ends without a newline
+  }
+main.c: 11 warnings, 0 errors
 compiling config.c...
 ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h(124): warning:  #1-D: last line of file ends without a newline
   /******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/
-delay.h(18): warning:  #1-D: last line of file ends without a newline
+delay.h(19): warning:  #1-D: last line of file ends without a newline
   #endif
-config.h(17): warning:  #1295-D: Deprecated declaration Clock_reConfig - give arg types
+config.h(32): warning:  #1295-D: Deprecated declaration Clock_reConfig - give arg types
   void Clock_reConfig();
-config.h(18): warning:  #1295-D: Deprecated declaration GPIO_Initt - give arg types
+config.h(33): warning:  #1295-D: Deprecated declaration GPIO_Initt - give arg types
   void GPIO_Initt();
-config.h(19): warning:  #1295-D: Deprecated declaration Interrupt_Initt - give arg types
+config.h(34): warning:  #1295-D: Deprecated declaration Interrupt_Initt - give arg types
   void Interrupt_Initt();
-config.h(20): warning:  #1295-D: Deprecated declaration I2C_Initt - give arg types
+config.h(35): warning:  #1295-D: Deprecated declaration I2C_Initt - give arg types
   void I2C_Initt();
-config.h(21): warning:  #1295-D: Deprecated declaration SPI_Initt - give arg types
+config.h(36): warning:  #1295-D: Deprecated declaration SPI_Initt - give arg types
   void SPI_Initt();
-config.h(22): warning:  #1295-D: Deprecated declaration TIM_Initt - give arg types
+config.h(37): warning:  #1295-D: Deprecated declaration TIM_Initt - give arg types
   void TIM_Initt();
-config.h(23): warning:  #1295-D: Deprecated declaration UART_Initt - give arg types
-  void UART_Initt();
-config.h(24): warning:  #1295-D: Deprecated declaration NVIC_Initt - give arg types
+config.h(39): warning:  #1295-D: Deprecated declaration NVIC_Initt - give arg types
   void NVIC_Initt();
-config.c(70): warning:  #550-D: variable "receivedChar"  was set but never used
+config.c: 9 warnings, 0 errors
+compiling delay.c...
+..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h(124): warning:  #1-D: last line of file ends without a newline
+  /******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/
+delay.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+config.h(32): warning:  #1295-D: Deprecated declaration Clock_reConfig - give arg types
+  void Clock_reConfig();
+config.h(33): warning:  #1295-D: Deprecated declaration GPIO_Initt - give arg types
+  void GPIO_Initt();
+config.h(34): warning:  #1295-D: Deprecated declaration Interrupt_Initt - give arg types
+  void Interrupt_Initt();
+config.h(35): warning:  #1295-D: Deprecated declaration I2C_Initt - give arg types
+  void I2C_Initt();
+config.h(36): warning:  #1295-D: Deprecated declaration SPI_Initt - give arg types
+  void SPI_Initt();
+config.h(37): warning:  #1295-D: Deprecated declaration TIM_Initt - give arg types
+  void TIM_Initt();
+config.h(39): warning:  #1295-D: Deprecated declaration NVIC_Initt - give arg types
+  void NVIC_Initt();
+delay.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+delay.c(15): warning:  #1-D: last line of file ends without a newline
+  }
+delay.c: 11 warnings, 0 errors
+compiling stm32f10x_it.c...
+..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h(124): warning:  #1-D: last line of file ends without a newline
+  /******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/
+delay.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+config.h(32): warning:  #1295-D: Deprecated declaration Clock_reConfig - give arg types
+  void Clock_reConfig();
+config.h(33): warning:  #1295-D: Deprecated declaration GPIO_Initt - give arg types
+  void GPIO_Initt();
+config.h(34): warning:  #1295-D: Deprecated declaration Interrupt_Initt - give arg types
+  void Interrupt_Initt();
+config.h(35): warning:  #1295-D: Deprecated declaration I2C_Initt - give arg types
+  void I2C_Initt();
+config.h(36): warning:  #1295-D: Deprecated declaration SPI_Initt - give arg types
+  void SPI_Initt();
+config.h(37): warning:  #1295-D: Deprecated declaration TIM_Initt - give arg types
+  void TIM_Initt();
+config.h(39): warning:  #1295-D: Deprecated declaration NVIC_Initt - give arg types
+  void NVIC_Initt();
+stm32f10x_it.c(559): warning:  #550-D: variable "receivedChar"  was set but never used
   	uint8_t receivedChar;  
-config.c: 11 warnings, 0 errors
+stm32f10x_it.c: 10 warnings, 0 errors
 linking...
-Program Size: Code=2484 RO-data=276 RW-data=48 ZI-data=1632  
-".\Objects\Source.axf" - 0 Error(s), 11 Warning(s).
+Program Size: Code=2496 RO-data=268 RW-data=52 ZI-data=1636  
+".\Objects\Source.axf" - 0 Error(s), 41 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -78,13 +144,13 @@ Package Vendor: Keil
 <h2>Collection of Component Files used:</h2>
 
    * Component: Keil::Device:Startup:1.0.0
-      Source file:   Device\Source\system_stm32f10x.c
-      Include file:  RTE_Driver\Config\RTE_Device.h
       Source file:   Device\Source\ARM\STM32F1xx_OPT.s
+      Include file:  RTE_Driver\Config\RTE_Device.h
       Source file:   Device\Source\ARM\startup_stm32f10x_md.s
+      Source file:   Device\Source\system_stm32f10x.c
 
    * Component: ARM::CMSIS:CORE:5.0.2
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>

@@ -3,6 +3,7 @@
 ".\objects\config.o"
 ".\objects\display.o"
 ".\objects\delay.o"
+".\objects\stm32f10x_it.o"
 ".\objects\misc.o"
 ".\objects\stm32f10x_exti.o"
 ".\objects\stm32f10x_gpio.o"
